@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MOBIUS MUSE | School Policy & Identity</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+        <h1>MOBIUS MUSE</h1>
+
+        <h2>Blueprint School Data Intake Form</h2>
+
+        <div class="page-number">
+            Page 1 of 12
+        </div>
+
+    </header>
+
+    <section class="section-title">
+        <h3>School Policy & Identity</h3>
+        <p>
+            One per school. Answer the questions below – your answers set
+            the rules the generator uses.
+        </p>
+    </section>
+
+    <form id="pageOneForm">
+
+        <!-- School Name -->
+
+        <div class="form-group">
+
+            <label>School Name</label>
+
+            <input
+                type="text"
+                id="schoolName"
+                placeholder="Enter school name"
+                required>
+
+        </div>
+
+        <!-- Filled By -->
+
+        <div class="row">
+
+            <div class="form-group">
+
+                <label>Filled in by</label>
+
+                <input
+                    type="text"
+                    id="filledBy"
+                    placeholder="Your name">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Date</label>
+
+                <input
+                    type="date"
+                    id="date">
+
+            </div>
+
+        </div>
+
+        <!-- Question 1 -->
+
+        <div class="question">
+
+            <h4>
+                1. Generalist teachers and grades
+            </h4>
+
+            <p>
+                A teacher who teaches a subject in one grade —
+                can they also teach it in other grades?
+            </p>
+
+            <label>
+                <input
+                    type="radio"
+                    name="gradeScope"
+                    value="explicit_only"
+                    checked>
+
+                No — only the exact grades I list.
+            </label>
+
+            <label>
+                <input
+                    type="radio"
+                    name="gradeScope"
+                    value="any_grade">
+
+                Yes — any grade as long as they teach that subject.
+            </label>
+
+        </div>
+
+        <!-- Question 2 -->
+
+        <div class="question">
+
+            <h4>
+                2. If there are not enough teaching hours
+            </h4>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="overload"
+                    value="block"
+                    checked>
+
+                Stop and tell me exactly where the gap is.
+
+            </label>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="overload"
+                    value="allow">
+
+                Continue and flag overloaded teachers.
+
+            </label>
+
+        </div>
+
+        <!-- Question 3 -->
+
+        <div class="question">
+
+            <h4>
+                3. If something you wrote is unclear
+            </h4>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="ambiguous"
+                    value="warn"
+                    checked>
+
+                Use a sensible default and notify me.
+
+            </label>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="ambiguous"
+                    value="stop">
+
+                Stop until I resolve it.
+
+            </label>
+
+        </div>
+
+        <!-- Question 4 -->
+
+        <div class="question">
+
+            <h4>
+                4. Specialist teachers
+            </h4>
+
+            <p>
+                Do you have teachers who only teach one subject
+                in one grade?
+            </p>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="specialist"
+                    value="yes">
+
+                Yes
+
+            </label>
+
+            <label>
+
+                <input
+                    type="radio"
+                    name="specialist"
+                    value="no"
+                    checked>
+
+                No
+
+            </label>
+
+        </div>
+
+        <!-- Buttons -->
+
+        <div class="buttons">
+
+            <button
+                type="button"
+                id="nextBtn">
+
+                Next →
+
+            </button>
+
+        </div>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
