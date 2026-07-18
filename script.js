@@ -1,7 +1,7 @@
 // ===============================
 // PAGE 1 - SCHOOL POLICY & IDENTITY
 // ===============================
-
+alert("script loaded");
 // Automatically set today's date
 window.addEventListener("DOMContentLoaded", () => {
 
